@@ -1,0 +1,43 @@
+body, * {
+	padding: 0;
+	margin: 0;
+	
+	/*box-sizing: border-box;
+	background-color: white;
+	height: 100%*/
+}
+div {
+	display: block;
+}
+div#welcome {
+	height: 100vh;
+	background: black;
+}
+ 
+div#projects {
+	height: 100vh;
+	background: yellow;
+}
+.head {
+	background-color: #666666;
+	min-height: 100vh;
+	width: 100%;
+}
+.prva {
+	background-image: url("../img/veseli-pas-dim.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	min-height: 30vh;
+	display: block;
+}
+.druga {
+	background-image: url("../img/o-nama-ada-i-crni.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	min-height: 30vh;
+	display: block;
+}
