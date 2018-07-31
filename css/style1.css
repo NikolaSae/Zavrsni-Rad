@@ -2,6 +2,8 @@ body, * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	/*height: 4000px;*/
+	/*background-color: yellow;*/
 }
 @font-face {
     font-family: "Birds of Paradise";
@@ -102,9 +104,16 @@ div.nagja ul li {
 	line-height: 38px;
 	vertical-align: middle;
 }
+.naviga li a {
+	color: #252726;
+}
+.pocetni-text p a:hover {
+	display: inline-block;
+	color: #ff9933;
+}
 div.nagja ul li a:link {
-	color: blue;
-	font-size: 17px;
+	
+	font-size: 18px;
 	height: 40px;
 	width: 105px;
 	padding: 0px;
@@ -114,10 +123,21 @@ div.nagja ul li a:link {
 	text-decoration: none;
 	display:inline-block;
 }
+.naviga li a:hover {
+	/*opacity: 1;*/
+	/*color: purple;*/
+	transition: 0.5s
+	background-color: grey;
+	/*opacity: 0.4;*/
+	/*border-bottom: 2px solid red;*/
+}
 div.nagja ul li:hover {
-	transition: .8s;
-	color: #252726;
-	/*background-color: blue;*/
+	
+	transition: 0.6s;
+	/*color: red;*/
+	background-color: #dadada;
+	/*opacity: 0.2;*/
+	border-bottom: 2px solid red;
 }
 
 /*div.nagja ul li a:link {
@@ -135,41 +155,57 @@ div.col-10 {
 
 div.content {
 	overflow: visible;
-	height: 500px;
+	height: 600px;
 	width: 100%;
 	background-color: yellow;
 	background-image: url("../img/back-pattern1.png");
 	background-repeat: repeat-x;
+	background-size: 100% 100%;
 }
 div.img-dog {
 	background-image: url("../img/dog-background-zoom1.png");
 	margin-top: 50px;
 	float: left;
 	position: relative;
+	/*top: 200px;*/
 	/*width: 100%;*/
 	background-attachment: cover;
 	background-size: 100% 100%;
-	height: 450px;
+	height: 550px;
 	width: 100%;
 	background-repeat: no-repeat;
 	display: inline-block;
 }
 div.pocetna {
-	/*width: 100vh;*/
-	height: 100vh;
+	/*width: 100vw;*/
+	min-height: 950px;
+	/*height: 100vh;*/
 	background-color: white;
 	/*overflow: visible;*/
-	position: relative;
+	/*position: relative;*/
 }	
-.saznaj {
+.saznaj-back {
+	font-size: 25px;
 	position: absolute;
-	right: 35%;
-	bottom: 0px;
+	bottom: -100px;
+	right: 30%;
+	height: 250px;
+	width: 250px;
+	border-radius:  125px;
+	background-color: red;
+	overflow: hidden;
+}
+.saznaj a {
+	overflow: hidden;
+	position: absolute;
+	right: 20%;
+	bottom: 45%;
+	color: #dadada;
 }
 div.pocetni-text {
 	float: right;
 	margin-top: 100px;
-	/*display: inline;*/
+	display: inline;
 	height: 450px;
 	text-align: right;
 	overflow: visible;
@@ -187,4 +223,116 @@ div.pocetni-text {
 .pocetni-text p a {
 	color: #996633;
 	font-size: 18px;
+	text-decoration: none;
+	list-style-type: none;
 }
+.clearfix {
+	clear: both;
+}
+div.onama {
+	/*position: absolute;*/
+	/*top: 100%;*/
+	width: 100%;
+	min-height: 900px;
+
+	background-color: #cccccc;
+}
+div.pocetni-text {
+	position: sticky;
+	top: 1vh;
+}
+
+div.content2 {
+	position: relative;
+	min-height: 500px;
+	background-color: #ffffff;
+	width: 100%;
+	/*opacity: 0.3;*/
+	margin-top: 50px;
+	/*background-attachment: fixed;*/
+}
+div.martop {
+	align-content: center;
+	width: 100%;
+	min-height: 600px;
+	
+	background-image: url("../img/back2.png");
+	background-position: center;
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+}
+div.drugast {
+	padding: 20px 10px;
+	display: inline-block;
+	max-width: 50%;
+	float: right;
+	position: relative;
+}
+.drugast h3 {
+	/*margin-top: 20px;*/
+	color: #996633;
+	font-size: 28px;
+}
+.drugast p {
+	font-size: 16px;
+	text-align: justify;
+}
+img {
+	padding: 20px 10px;
+	/*margin-top: auto;*/
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+}
+div.ada-pas {
+	float: left;
+	max-width: 100%;
+	/*margin-top: 0 auto;*/
+	width: 50%;
+}
+div.usluge {
+	position: relative;
+	/*top: 2000px;*/
+	width: 100%;
+	height: 1000px;
+	background-color: blue;
+}
+
+/*div.backpic {
+	width: 100%;
+	height: 450px;
+
+}*/
+div.backpic {
+	position: relative;
+	height: 25vh;
+	background-image: url("../img/veseli-pas-dim.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
